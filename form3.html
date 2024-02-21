@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beachside Hotel Booking</title>
+    <style>
+        body {
+            background-image: url("img6.webp");
+            background-size: cover;
+           
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+            background-color:black(0,0,0,0.5);width:70%; background-color: hsla(0, 0%, 20%,0.4); text-align:center; margin:10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        h1{
+            font-family:'Times New Roman', Times, serif;
+            font-size: 4.5rem;
+            color:aqua;
+            background-color: hsla(0, 0%, 20%,0.4); 
+           
+            width:100%;
+        }
+        h3{
+            color:aqua;
+            background-color: hsla(0, 0%, 20%,0.4);
+            width:42%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1> Welcome To Hotel Maira</h1>
+    </center>
+    <marquee>
+        <h3>"Seaside Serenity at Hotel Maira Goa – Where Tranquility Meets the Tides."</h3>
+    </marquee>
+
+
+    <section style="display: flex; justify-content:space-evenly;">
+        <div style="width: 50%; color:#fff;font-size:1.4em; display:flex; flex-direction:column;
+        align-items:left;font-family:Georgia, 'Times New Roman', Times, serif; padding-left:50px; font-family:sans-serif-regular-400;">
+            <h2 style="color:rgb(4, 4, 4); font-size: 4rem; text-align:center ;margin-right: 50px"><u>About us</u></h2>
+            <p style="color: #060707; text-align: center; margin-right: 20px; font-size: 1.5rem; color: #fffefe; text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);">Escape to Hotel Maira, a luxurious retreat in vibrant Goa. Our beachside haven offers modern comfort, exquisite dining, and curated cultural experiences. Immerse yourself in the charm of Goa, where every stay at Hotel Maira is a celebration of sun, sea, and unparalleled hospitality.</p>
+        </div>
+    
+        <div style="width: 50%; display:flex; flex-direction:column ;margin-left:500px;">
+    <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email" >Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" id="check-in" name="check-in" required>
+
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="check-out" required>
+
+        <label for="check-out">Number of Guests:</label>
+        <input type="number" name="check-out" required>
+
+
+
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" name="room-type" required>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+        </select>
+       
+        <!-- <a href="https://www.goibibo.com/hotels/maira-resort-and-convention-center-hotel-in-maira%20resort%20and%20convention%20center,%20raipur,%20chhattisgarh,%20chhattisgarh-2255091199849635561/?hquery={%22ci%22:%2220240208%22,%22co%22:%2220240209%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}&cc=IN&vcid=2255091199849635561&locusId=CTRPR&locusType=city&cityCode=CTRPR"> -->
+            <button type="submit">Book Now</button>
+        <!-- </a> -->
+    </form>
+        </div>
+    </section>
+    <script>
+        document.getElementById("form").addEventListener("submit", function(event){
+            window.location.href = 'https://www.goibibo.com/hotels/maira-resort-and-convention-center-hotel-in-maira%20resort%20and%20convention%20center,%20raipur,%20chhattisgarh,%20chhattisgarh-2255091199849635561/?hquery={%22ci%22:%2220240208%22,%22co%22:%2220240209%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}&cc=IN&vcid=2255091199849635561&locusId=CTRPR&locusType=city&cityCode=CTRPR';
+            console.log("Hello");
+            event.preventDefault();
+        });
+    </script>
+</body>
+
+
+
+</html>
